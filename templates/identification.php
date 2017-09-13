@@ -5,21 +5,18 @@
 			<form class="ajax" method="POST" action="">
 				<div>
 					<p>
-						<input type="text" name="login" placeholder="Pseudo">
-					</p>
-					<p>
 						<input type="email" name="email" placeholder="Email">
 					</p>
 					<p>
 						<input type="password" name="password" placeholder="Mot de passe">
 					</p>
 					<p>
-						<input type="hidden" name="TraitementClass" value="AddUser">
+						<input type="hidden" name="TraitementClass" value="LoginUser">
 					</p>
 					<p>
 						<button type="submit">Je me connecte</button>
 					</p>
-					<p class="feedback"><?php $this->afficherVarGlob("AddUserMessage")?></p>
+					<p class="feedback"><?php $this->afficherVarGlob("LoginUserMessage")?></p>
 				</div>				
 
 			</form>

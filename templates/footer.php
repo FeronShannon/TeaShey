@@ -30,7 +30,7 @@
 	</script>
 
 	<!-- Chemin vers notre JS -->
-	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="<?php echo $this->urlRacine; ?>/assets/js/script.js"></script>
 
 </body>
 </html>

@@ -12,7 +12,7 @@ class RouteParent
 {
 	public $codeHTML          ="";
 	public $cheminTemplate;
-	// protected $urlRacine;
+	protected $urlRacine;
 	protected $tabValeur      =[];
 	public $request           = null;
 	public $urlRedirection    ="";
@@ -23,6 +23,10 @@ class RouteParent
 		// La classe request de Symfony
 		$this->request = Request::createFromGlobals();
 		
+		$this->urlRacine = $this->request->getBasePath();
+
+		$this->cheminTemplate = __DIR__."/../../templates";
+
 		// Partie controller on regarde s'il y a un formulaire 
 		// à traiter grâce au champ hidden traitementClass
 		// On récupère l'info traitementClass
@@ -55,10 +59,6 @@ class RouteParent
 	{
 		// GLOBAL application (pour les menus)
 		global $app;
-
-		$urlRacine = $this->request->getBasePath();
-
-		$this->cheminTemplate = __DIR__."/../../templates";
 
 		extract($this->tabValeur);
 

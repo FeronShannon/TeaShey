@@ -92,4 +92,4 @@
 
 			</form>
 		</section>
-		<p><a href="#">Haut de page <i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>
+		<p><a href="#haut-page">Haut de page <i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>

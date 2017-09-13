@@ -26,3 +26,21 @@ $app
 ->get('/credits', "\\route\\Front::credits")
 ->bind('credits')
 ;
+
+// ROUTE POUR LA PAGE DES MENTIONS LEGALES web/index_dev.php/mentions-legales
+$app
+->get('/mentions-legales', "\\route\\Front::mentionsLegales")
+->bind('mentions-legales')
+;
+
+// ROUTE POUR LA PAGE IDENTIFICATION web/index_dev.php/identification
+$app
+->get('/identification', "\\route\\Front::identification")
+->bind('identification')
+;
+
+// ROUTE POUR LA PAGE PANIER web/index_dev.php/mon-panier
+$app
+->get('/mon-panier', "\\route\\Front::monPanier")
+->bind('mon-panier')
+;

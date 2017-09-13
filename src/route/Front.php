@@ -75,3 +75,19 @@ class Front
         
         return $this->codeHTML;
     }
+
+    function identification ()
+    {
+        $this->construireHTML([ "header", "identification", "footer" ]);
+        
+        return $this->codeHTML;
+    }
+
+    function monPanier ()
+    {
+        $this->construireHTML([ "header", "mon-panier", "footer" ]);
+        
+        return $this->codeHTML;
+    }
+
+}
