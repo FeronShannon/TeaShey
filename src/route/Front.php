@@ -7,11 +7,9 @@ use Symfony\Component\HttpFoundation\Request;
 
 class Front 
     extends RouteParent
+    // Hérite de RouteParent
 {
-    /*
-    hérité de RouteParent ====>
-
-    // Propriétés------>
+    /* Propriétés :
 
     public $codeHTML ="";
     public $cheminTemplate;
@@ -19,7 +17,7 @@ class Front
     protected $tabValeur =[];
     public $request = null;
 
-    // Méthodes-------->
+    // Méthodes :
 
     __construct - stocke le cheminTemplate, l'url de base et la request.
     Regarde s'il y a un traitement et l'active le cas échéant
@@ -36,8 +34,6 @@ class Front
     est $cle
 
     CES METHODES ET CES PROPRIETES SONT UTILISABLES DANS LES TEMPLATES EN FAISANT $this->propriete/$this->methode($para...) CAR LES TEMPLATES SONT APPELES DANS UNE METHODE DE CETTE CLASSE (construireHTML)
-
-
     */
 
     function accueil ()
@@ -68,7 +64,14 @@ class Front
 
     function credits ()
     {
-        $this->construireHTML([ "header", "section-credits", "footer" ]);
+        $this->construireHTML([ "header", "credits", "footer" ]);
+        
+        return $this->codeHTML;
+    }
+
+    function mentionsLegales ()
+    {
+        $this->construireHTML([ "header", "mentions-legales", "footer" ]);
         
         return $this->codeHTML;
     }
