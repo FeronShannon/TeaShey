@@ -9,11 +9,9 @@ class TraitementNewsletter
 	{
 		Parent::__construct($request);
 		$this	->traiterform("Newsletter")
-				->lireChamp("nom")
-				->lireChamp("prenom")
 				->lireEmail("email")
 				->insererLigneUnique("newsletter", "email")
-				->setMessage("Merci, tu recevras nos actualités !")
+				->setMessage('<span class="success"><i class="fa fa-check" aria-hidden="true"></i>Merci, tu recevras nos actualités !</span>')
 				;
 	}
 }

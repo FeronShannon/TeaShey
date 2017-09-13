@@ -2,17 +2,13 @@
 
 namespace route;
 
-
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Session;
 
-
 class RouteParent
+// Classe Parent des route/Front et route/Back
 
-/*
-classe Parent des classes route/Front et route/Back
-*/
 {
 	public $codeHTML          ="";
 	public $cheminTemplate;
@@ -32,8 +28,8 @@ classe Parent des classes route/Front et route/Back
 		// Partie controller on regarde s'il y a un formulaire 
 		// à traiter grâce au champ hidden traitementClass
 		// On récupère l'info traitementClass
-		$traitementClass = $this->request->get("TraitementClass"); // equivalent de lire Input
-		if ($traitementClass != "") //=> il y a un formulaire à traiter
+		$traitementClass = $this->request->get("TraitementClass"); // équivalent de lireInput
+		if ($traitementClass != "") //=> s'il y a un formulaire à traiter
 		{
 			// En POO, le code traitement sera dans une méthode de classe
 			// \\Controller\\TraitementNewsletter
@@ -55,7 +51,7 @@ classe Parent des classes route/Front et route/Back
 	}
 
 	function construireHTML($tab)
-	// Cette fonction retourne du html à partir d'un tableau de nom de template
+	// Cette fonction retourne du HTML à partir d'un tableau de nom de template
 	// Elle récupère des données dans la propriété tabValeur si nécessaire
 
 	{
@@ -64,9 +60,9 @@ classe Parent des classes route/Front et route/Back
 
 		extract($this->tabValeur);
 
-		ob_start() ;// mise en buffer
-		foreach ($tab as $key => $section) {
-			# code...
+		ob_start() ;
+		foreach ($tab as $key => $section)
+		{
 			require_once("{$this->cheminTemplate}/$section.php");
 		}
 
