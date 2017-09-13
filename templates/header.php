@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/c11c693658.js"></script>
 
-	<link rel="icon" href="./assets/img/favicon.png">
+	<link rel="icon" href="<?php echo $this->urlRacine; ?>/assets/img/favicon.png">
 	<title>TeaShey</title>
 	<!-- Fontawesome et Google Font :
 
@@ -17,8 +17,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Overlock:400,400i,700,700i,900,900i" rel="stylesheet">
 
 	<!-- Chemins vers nos CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->urlRacine; ?>/assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->urlRacine; ?>/assets/css/style.css">
 	
 </head>
 <body>
@@ -30,18 +30,19 @@ __    __   _______     ___       _______   _______ .______
 |   __   | |   __|   /  /_\  \   |  |  |  ||   __|  |      /     
 |  |  |  | |  |____ /  _____  \  |  '__'  ||  |____ |  |\  \____
 |__|  |__| |_______/__/     \__\ |_______/ |_______|| _| `._____|
+
  -->
 
 	<header>
 		<section>
 			<figure id="logo">
-				<a href="accueil.php"><img src="assets/img/logoteashey.png" alt="logo TeaShey"></a>
+				<a href="#"><img src="<?php echo $this->urlRacine; ?>/assets/img/logoteashey.png" alt="logo TeaShey"></a>
 			</figure>
 
 			<nav class="identification">
 				<ul>
-					<li><a href="identification.php">S'inscrire</a></li>
-					<li><a href="identification.php">Je me connecte !</a></li>
+					<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">S'inscrire</a></li>
+					<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Je me connecte !</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -50,21 +51,21 @@ __    __   _______     ___       _______   _______ .______
 				<li><a href="#section-notre-the">Notre thé</a></li>
 				<li><a href="#section-nos-produits">Nos produits</a></li>
 				<li><a href="#section-livraison">Livraison</a></li>
-				<li><a href="idees-recettes.php">Idées recettes</a></li>
+				<li><a href="<?php echo $app["url_generator"]->generate("idees-recettes")?>">Idées recettes</a></li>
 				<li><a href="#section-contact">Contac'thé-nous</a></li>
 			</ul>
-			<a href="mon-panier.php">Mon panier</a>
+			<a href="<?php echo $app["url_generator"]->generate("mon-panier")?>">Mon panier</a>
 		</nav>
 		
 		<div>
 			<figure>
-				<a target="_blank" href="https://www.facebook.com/TeaShey"><img src="assets/img/rs/logo-fb.png" alt="logo Facebook"></a>
+				<a target="_blank" href="https://www.facebook.com/TeaShey"><img src="<?php echo $this->urlRacine; ?>/assets/img/rs/logo-fb.png" alt="logo Facebook"></a>
 			</figure>
 			<figure>
-				<a target="_blank" href="https://twitter.com/TeaSheyTea"> <img src="assets/img/rs/logo-twitter.png" alt="logo Twitter"></a>
+				<a target="_blank" href="https://twitter.com/TeaSheyTea"> <img src="<?php echo $this->urlRacine; ?>/assets/img/rs/logo-twitter.png" alt="logo Twitter"></a>
 			</figure>
 			<figure>
-				<a target="_blank" href="https://www.instagram.com/TeaSheyTea/"> <img src="assets/img/rs/logo-instagram.png" alt="logo Instagram"></a>
+				<a target="_blank" href="https://www.instagram.com/TeaSheyTea/"> <img src="<?php echo $this->urlRacine; ?>/assets/img/rs/logo-instagram.png" alt="logo Instagram"></a>
 			</figure>
 		</div>
 	</header>
@@ -78,33 +79,3 @@ __    __   _______     ___       _______   _______ .______
                                         
  -->
 	<main>
-	</main>
-<!-- 
-
- _______   ______     ______   .___________. _______ .______      
-|   ____| /  __  \   /  __  \  |           ||   ____||   _  \     
-|  |__   |  |  |  | |  |  |  | `---|  |----`|  |__   |  |_)  |    
-|   __|  |  |  |  | |  |  |  |     |  |     |   __|  |      /     
-|  |     |  `--'  | |  `--'  |     |  |     |  |____ |  |\  \----.
-|__|      \______/   \______/      |__|     |_______|| _| `._____|
-                                                                  
-
- -->
-
-	<footer>
-		<a href="credits.php">Crédits</a>
-		<p>&copy; Tous droits réservés</p>
-	</footer>
-
-	<!-- Appel des scripts -->
-	<script
-	  src="https://code.jquery.com/jquery-3.2.1.min.js"
-	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	  crossorigin="anonymous">
-	</script>
-
-	<!-- Chemin vers notre JS -->
-	<script type="text/javascript" src="assets/js/script.js"></script>
-
-</body>
-</html>
