@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/c11c693658.js"></script>
 
-	<link rel="icon" href="<?php echo $this->urlRacine; ?>/assets/img/favicon.png">
+	<link rel="icon" href="<?php echo $urlRacine; ?>/assets/img/favicon.png">
 	<title>TeaShey</title>
 	<!-- Fontawesome et Google Font :
 
@@ -17,11 +17,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Overlock:400,400i,700,700i,900,900i" rel="stylesheet">
 
 	<!-- Chemins vers nos CSS -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $this->urlRacine; ?>/assets/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo $this->urlRacine; ?>/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $urlRacine; ?>/assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $urlRacine; ?>/assets/css/style.css">
 	
 </head>
 <body>
+<?php echo $urlRacine; ?>
 
 <!--
 __    __   _______     ___       _______   _______ .______      

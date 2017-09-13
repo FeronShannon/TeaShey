@@ -16,7 +16,7 @@ classe Parent des classes route/Front et route/Back
 {
 	public $codeHTML          ="";
 	public $cheminTemplate;
-	protected $urlRacine;
+	// protected $urlRacine;
 	protected $tabValeur      =[];
 	public $request           = null;
 	public $urlRedirection    ="";
@@ -24,11 +24,9 @@ classe Parent des classes route/Front et route/Back
 
 	function __construct()
 	{
-		$this->cheminTemplate = __DIR__."/../../templates";
 		// La classe request de Symfony
 		$this->request = Request::createFromGlobals();
-		$this->urlRacine = $this->request->getBasePath();
-
+		
 		// Partie controller on regarde s'il y a un formulaire 
 		// à traiter grâce au champ hidden traitementClass
 		// On récupère l'info traitementClass
@@ -61,6 +59,10 @@ classe Parent des classes route/Front et route/Back
 	{
 		// GLOBAL application (pour les menus)
 		global $app;
+
+		$urlRacine = $this->request->getBasePath();
+
+		$this->cheminTemplate = __DIR__."/../../templates";
 
 		extract($this->tabValeur);
 
