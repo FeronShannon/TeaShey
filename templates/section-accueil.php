@@ -22,7 +22,7 @@
 		</section>
 
 
-		<section>
+		<section id="section-notre-the">
 			<h2>Notre thé</h2>
 			<h3>Notre engagement</h3>
 			<p>Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.</p>
@@ -37,7 +37,7 @@
 
 		</section>
 
-		<section>
+		<section id="section-nos-produits">
 			<h2>Nos produits</h2>
 			<nav>
 				<ul>
@@ -50,7 +50,7 @@
 			</nav>
 		</section>
 
-		<section>
+		<section id="section-livraison">
 			<h2>Livré délivré</h2>
 			<h3>À domicile</h3>
 				<div>
@@ -65,15 +65,15 @@
 				</div>
 		</section>
 
-		<section>
+		<section id="section-contact">
 			<h2>Contac'thé-nous</h2>
 			<form class="ajax" method="GET" action="">
 				<h4>Le sujet de votre prise de contact</h4>
 				<select>
-					<option value="" selected>Une question sur un produit/thé ?</option>
-					<option value="">Une question sur la livraison ?</option>
-					<option value="">Laisser un avis</option>
-					<option value="">Autre demande</option>
+					<option value="1" selected>Une question sur un produit/thé ?</option>
+					<option value="2">Une question sur la livraison ?</option>
+					<option value="avis">Laisser un avis</option>
+					<option value="demande">Autre demande</option>
 				</select>
 
 				<div>
@@ -92,3 +92,4 @@
 
 			</form>
 		</section>
+		<p><a href="#">Haut de page <i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>
