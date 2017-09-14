@@ -15,7 +15,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,500,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Overlock:400,400i,700,700i,900,900i" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Cantora+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
 	<!-- Chemins vers nos CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->urlRacine; ?>/assets/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->urlRacine; ?>/assets/css/style.css">
@@ -40,10 +41,11 @@ __    __   _______     ___       _______   _______ .______
 
 	<header>
 		<section>
+			
 			<figure id="logo">
-				<a href="#"><img src="<?php echo $this->urlRacine; ?>/assets/img/logoteashey.png" alt="logo TeaShey"></a>
+				<a href="<?php echo $app["url_generator"]->generate("accueil")?>"><img src="<?php echo $this->urlRacine; ?>/assets/img/logoteashey.png" alt="logo TeaShey"></a>
 			</figure>
-
+			
 			<nav class="identification">
 				<ul>
 					<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">S'inscrire</a></li>
@@ -69,9 +71,9 @@ __    __   _______     ___       _______   _______ .______
 			<figure>
 				<a target="_blank" href="https://twitter.com/TeaSheyTea"> <img src="<?php echo $this->urlRacine; ?>/assets/img/rs/logo-twitter.png" alt="logo Twitter"></a>
 			</figure>
-			<figure>
+			<!-- <figure>
 				<a target="_blank" href="https://www.instagram.com/TeaSheyTea/"> <img src="<?php echo $this->urlRacine; ?>/assets/img/rs/logo-instagram.png" alt="logo Instagram"></a>
-			</figure>
+			</figure> -->
 		</div>
 	</header>
 <!--

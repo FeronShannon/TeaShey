@@ -51,6 +51,11 @@ li{
 	list-style: none;
 }
 
+@font-face{
+	font-family: 'Ailerons';
+	src: url('../font/Ailerons-Typeface.otf') format('opentype');
+}
+
 /*
  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
 ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
@@ -65,10 +70,17 @@ li{
  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀ */
 
 #logo{
-	width:30%;
+	width:12%;
+	margin: 15vh auto 0;
 }
+
+#logo img {
+	text-shadow: 0.05rem 0.05rem 0.05rem black;
+}
+
 .identification{
-	width: 70%;
+	width: 20%;
+	float: right;
 }
 .identification li{
 	cursor: pointer;
@@ -92,8 +104,9 @@ header{
 	transition: all 0.5s;
 }
 header section{
-	background: url("../img/banner-teashey.jpg");
+	background: url("../img/banner-teashey-3.jpg") ;
 	background-size: cover;
+	height: 100vh;
 	width: 100%;
 }
 header nav{
@@ -105,14 +118,10 @@ header nav ul{
 	justify-content: space-around;
 }
 
-@font-face{
-	font-family: 'Ailerons';
-	src: url('../font/Ailerons-Typeface.otf') format('opentype');
-}
 
 header > nav a{
-	font-family: 'Ailerons', cursive;
-	font-size: 3.2rem;
+	font-family: 'Mitr', sans-serif;
+	font-size: 2rem;
 	text-transform: uppercase;
 	color: rgb(43, 161, 154);
 }
