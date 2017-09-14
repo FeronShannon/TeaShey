@@ -11,23 +11,25 @@
 	<!-- Fontawesome et Google Font :
 
 	font-family: 'Arima Madurai', cursive;
-	font-family: 'Overlock', cursive;-->
+	font-family: 'Overlock', cursive;
+
+	Pour nb dans notre panier :
+	font-family: 'Poiret One', cursive;
+
+	Pour <h2 :
+	font-family: 'Mitr', sans-serif;-->
 
 	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,500,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Overlock:400,400i,700,700i,900,900i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cantora+One" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mitr:200,300,400,500,600,700" rel="stylesheet">
+	
 	<!-- Chemins vers nos CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->urlRacine; ?>/assets/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->urlRacine; ?>/assets/css/style.css">
 	
 </head>
 <body>
-
-
-
-
-
 
 <!--
 __    __   _______     ___       _______   _______ .______      
