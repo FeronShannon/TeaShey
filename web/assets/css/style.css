@@ -50,19 +50,26 @@ a{
 li{
 	list-style: none;
 }
+
 h2, h3, h4, h5{
-	font-family: 'Ailerons', cursive;
 	text-align: center;
-	color:  #6D6D6E; /*Dark-grey*/
+	color: black;
+}
+
+h2, h3{
+	font-family: 'Mitr', sans-serif;
+	text-transform: uppercase;
 }
 
 h2{
-	font-size: 6rem;
+	font-weight: 800;
+	font-size: 4.5rem;
 	margin-top: 2rem;
+	letter-spacing: 0.8rem;
 }
 
 h3{
-	font-size: 4rem;
+	font-size: 3rem;
 	font-family: 'Arima Madurai', cursive;
 
 }
