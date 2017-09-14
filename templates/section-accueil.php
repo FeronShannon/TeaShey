@@ -1,13 +1,13 @@
 		<section>
-			<h5>Section slider</h5>
+			<p>Section slider</p>
 			<p>Sélection du moment...</p>
 			<p>Nouveautés...</p>
-			<h5>Voir tous les produits</h5>
+			<p>Voir tous les produits</p>
 
 		</section>
 
 		<section>
-				<h3><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Envie de recevoir en exclusivité nos offres et nos nouveautés ? Abonnez-vous à la newsletter !</h3>
+				<p><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Envie de recevoir en exclusivité nos offres et nos nouveautés ? Abonnez-vous à la newsletter !</p>
 
 				<form class="ajax" method="GET" action="">
 
@@ -27,11 +27,5 @@
 		require_once("section-livraison.php");
 		require_once("section-contact.php");
 ?>
-				
-
-		
-
-		
-
 		
 		<p><a href="#haut-page">Haut de page <i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>
