@@ -23,7 +23,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Overlock:400,400i,700,700i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Mitr:200,300,400,500,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Mitr:200,300,400,500,600,700" rel="stylesheet">
 	
 	<!-- Chemins vers nos CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo $this->urlRacine; ?>/assets/css/normalize.css">
@@ -44,17 +43,18 @@ __    __   _______     ___       _______   _______ .______
 
 	<header>
 		<section>
-			
-			<figure id="logo">
-				<a href="<?php echo $app["url_generator"]->generate("accueil")?>"><img src="<?php echo $this->urlRacine; ?>/assets/img/logoteashey.png" alt="logo TeaShey"></a>
-			</figure>
-			
-			<nav class="identification">
-				<ul>
-					<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">S'inscrire</a></li>
-					<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Je me connecte !</a></li>
-				</ul>
-			</nav>
+			<div id="transparence">
+				<figure id="logo">
+					<a href="<?php echo $app["url_generator"]->generate("accueil")?>"><img src="<?php echo $this->urlRacine; ?>/assets/img/logoteashey.png" alt="logo TeaShey"></a>
+				</figure>
+				
+				<nav class="identification">
+					<ul>
+						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">S'inscrire</a></li>
+						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Je me connecte !</a></li>
+					</ul>
+				</nav>
+			</div>
 		</section>
 		<nav>
 			<ul>
