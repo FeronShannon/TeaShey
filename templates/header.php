@@ -45,7 +45,7 @@ __    __   _______     ___       _______   _______ .______
 		<section>
 			<div id="transparence">
 				<figure id="logo">
-					<a href="<?php echo $app["url_generator"]->generate("accueil")?>"><img src="<?php echo $this->urlRacine; ?>/assets/img/logoteashey.png" alt="logo TeaShey"></a>
+					<a href="<?php echo $app["url_generator"]->generate("accueil")?>"><img src="<?php echo $this->urlRacine; ?>/assets/img/logoteashey-test.png" alt="logo TeaShey"></a>
 				</figure>
 				
 				<nav class="identification">
