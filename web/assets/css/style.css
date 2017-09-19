@@ -155,6 +155,16 @@ header section{
 	height: 100vh;
 	width: 100%;
 }
+
+#transparence {
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
 header nav{
 	width: 40%;
 }
