@@ -16,7 +16,7 @@
 					<input type="text" name="nom" required placeholder="Nom">
 					<input type="email" name="email" required placeholder="Email">
 					<h4>Votre message</h4>
-					<textarea rows="30"></textarea>
+					<textarea rows="12"></textarea>
 					<button type="submit">Envoyer</button>
 				</div>
 
