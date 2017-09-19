@@ -116,7 +116,7 @@ h4{
  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀ */
 
 #logo{
-	width:12%;
+	width:10%;
 	margin: 15vh auto 0;
 }
 
@@ -156,7 +156,7 @@ header section{
 	width: 100%;
 }
 header nav{
-	width: 70%;
+	width: 40%;
 }
 
 header nav ul{
@@ -167,7 +167,7 @@ header nav ul{
 
 header > nav a{
 	font-family: 'Mitr', sans-serif;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 	color: rgb(43, 161, 154);
 }
