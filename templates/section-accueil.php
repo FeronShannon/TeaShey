@@ -6,7 +6,7 @@
 
 		</section>
 
-		<section>
+		<section id="section-newsletter">
 				<p><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Envie de recevoir en exclusivité nos offres et nos nouveautés ? Abonnez-vous à la newsletter !</p>
 
 				<form class="ajax" method="GET" action="">
@@ -28,4 +28,4 @@
 		require_once("section-contact.php");
 ?>
 		
-		<p><a href="#haut-page">Haut de page <i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>
+		<p class="centrer"><a href="#haut-page">Haut de page <i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>

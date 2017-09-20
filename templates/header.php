@@ -51,7 +51,7 @@ __    __   _______     ___       _______   _______ .______
 				<nav class="identification">
 					<ul>
 						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">S'inscrire</a></li>
-						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Je me connecte !</a></li>
+						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Se connecter</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -64,7 +64,12 @@ __    __   _______     ___       _______   _______ .______
 				<li><a href="<?php echo $app["url_generator"]->generate("idees-recettes")?>">Idées recettes</a></li>
 				<li><a href="#section-contact">Contac'thé-nous</a></li>
 			</ul>
-			<a href="<?php echo $app["url_generator"]->generate("mon-panier")?>">Mon panier</a>
+			<a href="<?php echo $app["url_generator"]->generate("mon-panier")?>">
+				<figure>
+					<img src="<?php echo $this->urlRacine; ?>/assets/img/panier-vide.png" alt="logo panier">
+					<figcaption>Mon panier</figcaption>
+				</figure>
+			</a>
 		</nav>
 		
 		<div>
@@ -89,3 +94,4 @@ __    __   _______     ___       _______   _______ .______
                                         
  -->
 	<main id="haut-page">
+		<div class="container">

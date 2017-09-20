@@ -1,3 +1,5 @@
+		</div>
+
 	</main>
 <!-- 
 
@@ -19,7 +21,7 @@
 			</ul>
 		</nav>
 		
-		<p>&copy; Tous droits réservés</p>
+		<p class="centrer">&copy; Tous droits réservés</p>
 	</footer>
 
 	<!-- Appel des scripts -->
