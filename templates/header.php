@@ -50,13 +50,13 @@ __    __   _______     ___       _______   _______ .______
 				
 				<nav class="identification">
 					<ul>
-						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">S'inscrire</a></li>
-						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Je me connecte !</a></li>
+						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Connexion</a></li>
+						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Inscription</a></li>
 					</ul>
 				</nav>
 			</div>
 		</section>
-		<nav>
+		<nav class="menu">
 			<ul>
 				<li><a href="#section-notre-the">Notre thé</a></li>
 				<li><a href="#section-nos-produits">Nos produits</a></li>
@@ -64,20 +64,8 @@ __    __   _______     ___       _______   _______ .______
 				<li><a href="<?php echo $app["url_generator"]->generate("idees-recettes")?>">Idées recettes</a></li>
 				<li><a href="#section-contact">Contac'thé-nous</a></li>
 			</ul>
-			<a href="<?php echo $app["url_generator"]->generate("mon-panier")?>">Mon panier</a>
+			<a href="<?php echo $app["url_generator"]->generate("mon-panier")?>"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
 		</nav>
-		
-		<div>
-			<figure>
-				<a target="_blank" href="https://www.facebook.com/TeaShey"><img src="<?php echo $this->urlRacine; ?>/assets/img/rs/logo-fb.png" alt="logo Facebook"></a>
-			</figure>
-			<figure>
-				<a target="_blank" href="https://twitter.com/TeaSheyTea"> <img src="<?php echo $this->urlRacine; ?>/assets/img/rs/logo-twitter.png" alt="logo Twitter"></a>
-			</figure>
-			<!-- <figure>
-				<a target="_blank" href="https://www.instagram.com/TeaSheyTea/"> <img src="<?php echo $this->urlRacine; ?>/assets/img/rs/logo-instagram.png" alt="logo Instagram"></a>
-			</figure> -->
-		</div>
 	</header>
 <!--
 .___  ___.      ___       __  .__   __. 

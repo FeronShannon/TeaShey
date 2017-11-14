@@ -43,10 +43,15 @@ html {
 html, body{
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 body, input{
 	font-size: 1.7rem;
 	font-family: 'Overlock', cursive;
+}
+main{
+	width: 80%;
+	margin: 0 auto;
 }
 input,
 select,
@@ -66,12 +71,14 @@ a, button{
 button{
 	border: none;
 }
-
+ul{
+	padding-left: 0;
+}
 li{
 	list-style: none;
 }
 
-h2, h3, h4, h5{
+h2, h3, h5{
 	text-align: center;
 	color: black;
 }
@@ -95,6 +102,8 @@ h3{
 
 h4{
 	font-size: 2rem;
+	text-align: left;
+	margin: 4rem 0 2rem 0.3rem;
 }
 
 @font-face{
@@ -116,23 +125,24 @@ h4{
  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀ */
 
 #logo{
-	width:10%;
-	margin: 15vh auto 0;
+	width: 10%;
+	margin: 12vh auto 0;
 }
-
-#logo img {
+#logo img{
 	text-shadow: 0.05rem 0.05rem 0.05rem black;
 }
-
-.identification{
-	width: 20%;
-	float: right;
+.identification ul{
+	max-width: 20%;
+	position: fixed;
+	left: 85%;
+	top: 2%;
 }
 .identification li{
 	cursor: pointer;
-	padding: 1.5rem;
+	padding: 9%;
 	background-color: rgba(113, 212, 154, 0.4);
 	border-radius: 1.2rem;
+	margin: 3%;
 }
 .identification li:hover{
 	background-color: rgba(113, 212, 154, 0.7);
@@ -155,7 +165,6 @@ header section{
 	height: 100vh;
 	width: 100%;
 }
-
 #transparence {
 	height: 100vh;
 	width: 100%;
@@ -164,25 +173,22 @@ header section{
 	top: 0px;
 	left: 0px;
 }
-
 header nav{
-	width: 40%;
+	width: 70%;
+	margin: 0 auto;
 }
-
 header nav ul{
 	display: flex;
 	justify-content: space-around;
 }
-
-
 header > nav a{
 	font-family: 'Mitr', sans-serif;
-	font-size: 1.6rem;
+	font-size: 2.7rem;
 	text-transform: uppercase;
 	color: rgb(43, 161, 154);
 }
 header div figure{
-	width:13%;
+	width: 15%;
 }
 /*
  ▄▄       ▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄ 
@@ -254,7 +260,6 @@ form textarea{
 Voici un indice Audrey :
 :valid	input:valid	Selects all <input> elements with a valid value
 */	padding: 1.5rem;
-	margin: 0.5rem;
 	border-radius: 1.2rem;
 	border: 1px solid rgba(113, 212, 154, 0.3);
 }
@@ -313,8 +318,12 @@ footer{
 
 footer a{
 	color: white;
+	padding: 1%;
 }
 
 footer a:hover{
 	color: #71D49A;
+}
+footer div{
+	font-size: 3.5rem;
 }

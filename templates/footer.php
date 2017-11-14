@@ -16,10 +16,18 @@
 			<ul>
 				<li><a href="<?php echo $app["url_generator"]->generate("credits")?>">Crédits</a></li>
 				<li><a href="<?php echo $app["url_generator"]->generate("mentions-legales")?>">Mentions légales</a></li>
+				<li>&copy; Tous droits réservés.</li>
 			</ul>
 		</nav>
-		
-		<p>&copy; Tous droits réservés</p>
+		<div>
+			
+				<a target="_blank" href="https://www.facebook.com/TeaShey"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			
+				<a target="_blank" href="https://twitter.com/TeaSheyTea"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			
+				<a target="_blank" href="https://www.instagram.com/TeaSheyTea/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			
+		</div>
 	</footer>
 
 	<!-- Appel des scripts -->
