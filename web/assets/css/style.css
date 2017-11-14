@@ -111,6 +111,15 @@ h4{
 	src: url('../font/Ailerons-Typeface.otf') format('opentype');
 }
 
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.centrer {
+	text-align: center;
+}
+
 /*
  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
 ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
@@ -140,6 +149,7 @@ h4{
 .identification li{
 	cursor: pointer;
 	padding: 9%;
+	font-size: 1.6rem;
 	background-color: rgba(113, 212, 154, 0.4);
 	border-radius: 1.2rem;
 	margin: 3%;
@@ -242,8 +252,6 @@ Pour enlever le problème des margin et padding calculés, voici le code :
 
 */
 form{
-	width: 60%;
-	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -279,22 +287,26 @@ form button{
 	width: 100%;
 	cursor: pointer;
 	padding: 1.5rem;
+	margin: 0.5rem;
 	background-color: rgba(113, 212, 154, 0.4);
 	border-radius: 1.2rem;
 	color: white;
-/*	text-shadow: 0.1rem 0.1rem 0.1rem black;
-*/}
+/*	text-shadow: 0.1rem 0.1rem 0.1rem black; */
+}
 form button:hover{
 	background-color: rgba(113, 212, 154, 0.7);
 }
 #section-identification{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 #section-identification form{
 	width: 30%;
+	display: block;
 }
+
+
 
 /*
   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
@@ -324,6 +336,7 @@ footer a{
 footer a:hover{
 	color: #71D49A;
 }
+
 footer div{
 	font-size: 3.5rem;
 }

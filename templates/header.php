@@ -64,7 +64,14 @@ __    __   _______     ___       _______   _______ .______
 				<li><a href="<?php echo $app["url_generator"]->generate("idees-recettes")?>">Idées recettes</a></li>
 				<li><a href="#section-contact">Contac'thé-nous</a></li>
 			</ul>
+
 			<a href="<?php echo $app["url_generator"]->generate("mon-panier")?>"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+
+			<!-- <a href="<?php echo $app["url_generator"]->generate("mon-panier")?>">
+				<figure>
+					<img src="<?php echo $this->urlRacine; ?>/assets/img/panier-vide.png" alt="logo panier">
+				</figure>
+			</a> -->
 		</nav>
 	</header>
 <!--
@@ -77,3 +84,4 @@ __    __   _______     ___       _______   _______ .______
                                         
  -->
 	<main id="haut-page">
+		<div class="container">
