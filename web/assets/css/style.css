@@ -49,6 +49,9 @@ body, input{
 	font-size: 1.7rem;
 	font-family: 'Overlock', cursive;
 }
+body{
+	background-image: url('../img/pattern3.jpg');
+}
 main{
 	width: 80%;
 	margin: 0 auto;
@@ -99,11 +102,12 @@ h3{
 	font-family: 'Arima Madurai', cursive;
 	font-size: 2.2rem;
 }
-
+h3, h4{
+	margin: 4rem 0 2rem 0.3rem;
+}
 h4{
 	font-size: 2rem;
 	text-align: left;
-	margin: 4rem 0 2rem 0.3rem;
 }
 
 @font-face{
@@ -119,7 +123,9 @@ h4{
 .centrer {
 	text-align: center;
 }
-
+p{
+	text-align: justify;
+}
 /*
  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
 ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
@@ -150,7 +156,7 @@ h4{
 	cursor: pointer;
 	padding: 9%;
 	font-size: 1.6rem;
-	background-color: rgba(113, 212, 154, 0.4);
+	background-color: rgba(113, 212, 154, 0.5);
 	border-radius: 1.2rem;
 	margin: 3%;
 }
@@ -168,6 +174,7 @@ header{
 	flex-wrap: wrap;
 	box-shadow: 0px 2px 5px rgba(0,0,0, 0.5);
 	transition: all 0.5s;
+	background-color: white;
 }
 header section{
 	background: url("../img/banner-teashey-3.jpg") ;
@@ -264,6 +271,7 @@ form input,
 form select,
 form textarea{
 	width: 100%;
+	margin: 0.6rem;
 /*	transition: background-color 2s ease-in-out;
 Voici un indice Audrey :
 :valid	input:valid	Selects all <input> elements with a valid value
@@ -305,8 +313,10 @@ form button:hover{
 	width: 30%;
 	display: block;
 }
-
-
+#section-livraison div{
+	width: 45%;
+	display: inline-block;
+}
 
 /*
   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
@@ -324,19 +334,20 @@ form button:hover{
 footer{
 	text-align: center;
 	background-color: #2ba19a;
-	padding: 4rem 0;
-	margin: 0 auto;
+	padding: 3rem;
+	margin-top: 20rem;
 }
 
-footer a{
+footer div a{
 	color: white;
 	padding: 1%;
 }
-
+footer a:visited{
+	color: white;
+}
 footer a:hover{
 	color: #71D49A;
 }
-
 footer div{
 	font-size: 3.5rem;
 }
