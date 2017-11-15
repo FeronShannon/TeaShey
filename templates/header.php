@@ -45,24 +45,24 @@ __    __   _______     ___       _______   _______ .______
 		<section>
 			<div id="transparence">
 				<figure id="logo">
-					<a href="<?php echo $app["url_generator"]->generate("accueil")?>"><img src="<?php echo $this->urlRacine; ?>/assets/img/logoteashey-test.png" alt="logo TeaShey"></a>
+					<a href="<?php echo $app["url_generator"]->generate("accueil")?>"><img src="<?php echo $this->urlRacine; ?>/assets/img/logoteashey-test.png" alt="Logo TeaShey"></a>
 				</figure>
 				
 				<nav class="identification">
 					<ul>
-						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Connexion</a></li>
-						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>">Inscription</a></li>
+						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>#section-identification">Connexion</a></li>
+						<li><a href="<?php echo $app["url_generator"]->generate("identification")?>#section-identification">Inscription</a></li>
 					</ul>
 				</nav>
 			</div>
 		</section>
 		<nav class="menu">
 			<ul>
-				<li><a href="#section-notre-the">Notre thé</a></li>
-				<li><a href="#section-nos-produits">Nos produits</a></li>
-				<li><a href="#section-livraison">Livraison</a></li>
+				<li><a href="<?php echo $app["url_generator"]->generate("accueil")?>#section-notre-the">Notre thé</a></li>
+				<li><a href="<?php echo $app["url_generator"]->generate("accueil")?>#section-nos-produits">Nos produits</a></li>
+				<li><a href="<?php echo $app["url_generator"]->generate("accueil")?>#section-livraison">Livraison</a></li>
 				<li><a href="<?php echo $app["url_generator"]->generate("idees-recettes")?>">Idées recettes</a></li>
-				<li><a href="#section-contact">Contac'thé-nous</a></li>
+				<li><a href="<?php echo $app["url_generator"]->generate("accueil")?>#section-contact">Contac'thé-nous</a></li>
 			</ul>
 
 			<a href="<?php echo $app["url_generator"]->generate("mon-panier")?>"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>

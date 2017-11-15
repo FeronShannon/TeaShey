@@ -1,9 +1,4 @@
 <?php
-/*
-La classe Model/Model sert pour toutes les requêtes SQL qui ne sont pas dans le contrôleur.
-Elle permet de bien séparerle code en MVC.
-Elle ressemble à la classe Model que nous avions créé quand nous travaillions avec notre propre framework "maison". Ses méthodes retourne un objet Statement (similaire au PDO Statement)
-*/
 
 namespace Model;
 

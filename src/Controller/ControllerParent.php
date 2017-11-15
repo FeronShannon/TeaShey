@@ -4,17 +4,17 @@ namespace Controller;
 
 class ControllerParent
 {
-	public $tabNameValeur = [];
-	public $request = null;
-	public $traitement = "";
-	public $tabError = [];
+	public $tabNameValeur  = [];
+	public $request        = null;
+	public $traitement     = "";
+	public $tabError       = [];
 	public $urlRedirection = "";
-	public $session = "";
+	public $session        = "";
 
-	// 
+	
 	function __construct($request, $session=null)
 	{
-		$this->request =$request;
+		$this->request = $request;
 		$this->session = $session;
 	}
 
@@ -38,15 +38,14 @@ class ControllerParent
 
 	function lireChampSecurise ($nameChamp)
 	{
-
 		// Je récupère le champ name dans la requête et
-		// je stocke sa valeur dans une variable
+		// je stocke sa valeur dans une variable :
 		$valeur = $this->request->get($nameChamp);
 		// J'enlève les espaces dans un champ au début et à la fin
     	$valeur = trim($valeur);
     	// J'enlève les balises :
     	$valeur = strip_tags($valeur);	
-		// Je mets le contenu vérifié dans mon tabNameValeur
+		// Je mets le contenu vérifié dans mon tabNameValeur :
 		$this->tabNameValeur[$nameChamp] = $valeur;
 		
 		return $this;
@@ -68,7 +67,6 @@ class ControllerParent
 		// POUR VERIFIER QUE L'EMAIL EST VALIDE
 		return $this;
 	}
-
 
 	function insererLigne($table)
 	{
@@ -109,18 +107,16 @@ class ControllerParent
 			$app['db']->insert($table, $this->tabNameValeur);
 		}
 
-		return $this;
-
-		
+		return $this;		
 	}
 
 	function ajouterValeurTab($name, $valeur)
 	{
-		$this->tabNameValeur[$name] =$valeur;
+		$this->tabNameValeur[$name] = $valeur;
 		return $this;
 	}
 
-	function traiterform($traitement)
+	function traiterForm($traitement)
 	{
 		$this->traitement = $traitement;
 		return $this;
@@ -151,13 +147,10 @@ class ControllerParent
     		
     		$passwordHash = password_hash($password, PASSWORD_DEFAULT);
     		$this->ajouterValeurTab($colonneSQL, $passwordHash);
-
-
     	}
-
     	else
     	{
-    		$tabError[] = "Problème avec le mot de passe";
+    		$tabError[] = "Problème avec le mot de passe.";
     	}
 
     	return $this;

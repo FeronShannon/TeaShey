@@ -8,12 +8,13 @@ class TraitementContact
 	function __construct($request)
 	{
 		Parent::__construct($request);
-		$this	->traiterform("Contact")
+		$this	->traiterForm("Contact")
 				->lireChampSecurise("prenom")
 				->lireChampSecurise("nom")
 				->lireEmail("email")
 				->lireChampSecurise("message")
-				->ajouterValeurTab("statut", 0)
+				->lireChampSecurise("sujet")
+				->ajouterValeurTab("date", date("Y-m-d H:i:s"))
 				->insererLigne("contact")
 				->setMessage('<span class="success"><i class="fa fa-check" aria-hidden="true"></i> Merci, nous restons en contact !</span>')
 				;
