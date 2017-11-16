@@ -1,23 +1,20 @@
-		<section>
-			<p>Section slider</p>
-			<p>Sélection du moment...</p>
-			<p>Nouveautés...</p>
-			<p>Voir tous les produits</p>
-
-		</section>
+<?php
+		require_once("section-slider.php");
+?>
 
 		<section id="section-newsletter">
-				<p><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Envie de recevoir en exclusivité nos offres et nos nouveautés ? Abonnez-vous à la newsletter !</p>
+			<h3>Newsletter</h3>
+			<p><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Envie de recevoir en exclusivité nos offres et nouveautés ?</p>
 
-				<form class="ajax" method="POST" action="#section-newsletter">
+			<form class="ajax" method="POST" action="#section-newsletter">
 
-					<input type="email" name="email" placeholder="Votre email ici">
+				<input type="email" name="email" placeholder="Mon email ici">
 
-					<input type="hidden" name="TraitementClass" value="Newsletter">
+				<input type="hidden" name="TraitementClass" value="Newsletter">
 
-					<button type="submit">OK</button>
-					<p class="feedback"><?php $this->afficherVarGlob("NewsletterMessage") ?></p>
-				</form>
+				<button type="submit">OK</button>
+				<p class="feedback"><?php $this->afficherVarGlob("NewsletterMessage") ?></p>
+			</form>
 		</section>
 
 <?php 	

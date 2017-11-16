@@ -18,7 +18,8 @@
 			<ul>
 				<li><a href="<?php echo $app["url_generator"]->generate("credits")?>">Crédits</a></li>
 				<li><a href="<?php echo $app["url_generator"]->generate("mentions-legales")?>">Mentions légales</a></li>
-				<li>&copy; Tous droits réservés.</li>
+				<li>&copy; Tous droits réservés / Société OOPShey :</li>
+				<li><a target="_blank" href="http://aguitteaud.com/">Audrey GUITTEAUD</a> – <a target="_blank" href="https://codepen.io/FeronShannon/full/EwvOVb/">Shannon FÉRON</a>.</li>
 			</ul>
 		</nav>
 

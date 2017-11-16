@@ -99,7 +99,7 @@ class ControllerParent
 		
 		if ($ligne)
 		{
-			$this->tabError[] = "Cet $nomColonneUnique est déjà présent dans la base de données !";
+			$this->tabError[] = "Vous êtes déjà inscrit(e) à la newsletter :)";
 		}
 
 		else
