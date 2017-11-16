@@ -5,7 +5,7 @@
 			<ul>
 				<li>HTML5/CSS3.</li>
 				<li>JavaScript.</li>
-				<li>PHP/MySQL.</li>
+				<li>PHP/SQL.</li>
 				<li>Silex, PHP micro-framework basé sur Symfony.</li>
 			</ul>
 
